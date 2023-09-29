@@ -91,8 +91,9 @@ contactForm.addEventListener('submit', (e) => {
   xhr.open('POST', '/.netlify/functions/sendEmail');  
   xhr.setRequestHeader('content-type', 'application/json');
   xhr.onload = function() {
-    console.log(xhr.responseText); 
-    if(xhr.responseText == 'success'){
+    const response = JSON.parse(xhr.responseText);
+    console.log(response);
+    if(response.message == 'Email sent successfully'){
       alert('Email sent');
       firstName.value = '';
       lastName.value = '';
