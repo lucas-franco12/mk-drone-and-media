@@ -11,11 +11,6 @@ function closeFullImg(){
   fullImgContainer.style.display = "none";
 }
 
-
-
-
-// Contact 
-
 //Get data 
 const contactForm = document.querySelector('.contact-form');
 
@@ -32,7 +27,7 @@ function isValidEmail(email) {
 }
 
 function isValidPhoneNumber(phoneNumber) {
-  const phoneRegex = /^\d{10}$/;  
+  const phoneRegex = /^\+?\d{1,3}?[-.\s]?\(?(\d{1,3}?)?\)?[-.\s]?\d{1,2}[-.\s]?\d{2,4}[-.\s]?\d{2,4}$/;  
   return phoneRegex.test(phoneNumber);
 }
 
