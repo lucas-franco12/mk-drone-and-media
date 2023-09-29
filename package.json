@@ -1,0 +1,16 @@
+{
+  "name": "mk-drone-and-media",
+  "version": "1.0.0",
+  "description": "Website for MK Drone and Media. Displays business services and info and provides a contact form.",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.5"
+  },
+  "scripts": {
+    "start": "netlify dev"
+  },
+  "author": "Lucas Franco",
+  "license": "ISC"
+}
+
